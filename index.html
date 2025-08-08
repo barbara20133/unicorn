@@ -1,292 +1,87 @@
 <!DOCTYPE html>
 <html lang="he" dir="rtl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>דפי צביעה ולמידה לילדים</title>
-  <style>
-    :root { --brand:#cc00cc; --brand-dark:#990099; --bg:#fff0f5; --card:#ffffff; --dash:#d6d6d6; }
-    * { box-sizing: border-box; }
-    body { font-family: Arial, Helvetica, sans-serif; background: var(--bg); margin: 0; padding: 24px; text-align: center; }
-    header { max-width: 1200px; margin: 0 auto 16px; }
-    h1 { color: var(--brand); margin: 0 0 8px; }
-    p.sub { margin: 0; font-size: 18px; }
-
-    /* Nav */
-    .nav { display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; margin: 20px auto 8px; }
-    .chip { background: #fff; border:1px solid #e8e8e8; padding: 8px 12px; border-radius: 999px; cursor: pointer; font-weight: 700; }
-
-    /* Sections */
-    section { max-width: 1200px; margin: 40px auto; text-align: start; }
-    section h2 { color: #333; margin: 0 0 12px; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 16px; }
-
-    .card { background: var(--card); border: 2px dashed var(--dash); padding: 16px; border-radius: 12px; text-align: center; }
-    .card img { max-width: 100%; height: 200px; object-fit: contain; display: block; margin: 0 auto 10px; }
-    .btn { display: inline-block; padding: 10px 16px; background: var(--brand); color: #fff; text-decoration: none; border-radius: 8px; font-weight: 800; }
-    .btn:hover { background: var(--brand-dark); }
-
-    .note { font-size: 12px; opacity: .8; margin-top: 8px; }
-
-    /* Utilities */
-    .section { margin-top: 40px; }
-    .sr-only { position: absolute; left: -9999px; }
-    footer { max-width: 1200px; margin: 48px auto 0; font-size: 14px; color:#555; text-align: center; }
-  </style>
+<meta charset="UTF-8">
+<title>דפי צביעה ולמידה לילדים</title>
+<style>
+body { font-family: Arial, sans-serif; background-color: #fff0f5; text-align: center; padding: 20px; }
+h1 { color: #cc00cc; }
+.section { margin-top: 40px; }
+.coloring-page { margin: 20px; border: 2px dashed #ccc; padding: 20px; border-radius: 10px; background-color: #ffffff; display: inline-block; }
+.coloring-page img { max-width: 300px; display: block; margin: 0 auto 10px; }
+.download-button { display: inline-block; padding: 10px 20px; background-color: #cc00cc; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; }
+.download-button:hover { background-color: #990099; }
+</style>
 </head>
 <body>
-  <header>
-    <h1>!ברוכים הבאים לאתר דפי צביעה ולמידה</h1>
-    <p class="sub">בחרו קטגוריה, לחצו על הקובץ והורידו להדפסה בחינם 🎨🧩</p>
-    <nav class="nav" aria-label="ניווט קטגוריות מהיר">
-      <button class="chip" onclick="scrollToId('coloring-unicorns')">חדי קרן</button>
-      <button class="chip" onclick="scrollToId('coloring-animals')">חיות</button>
-      <button class="chip" onclick="scrollToId('coloring-vehicles')">כלי רכב</button>
-      <button class="chip" onclick="scrollToId('coloring-dinosaurs')">דינוזאורים</button>
-      <button class="chip" onclick="scrollToId('coloring-superheroes')">גיבורי על</button>
-      <button class="chip" onclick="scrollToId('coloring-princesses')">נסיכות ופיות</button>
-      <button class="chip" onclick="scrollToId('coloring-space')">חלל</button>
-      <button class="chip" onclick="scrollToId('coloring-nature')">טבע ופרחים</button>
-      <button class="chip" onclick="scrollToId('coloring-mandalas')">מנדלות</button>
-      <button class="chip" onclick="scrollToId('learning')">דפי למידה</button>
-      <button class="chip" onclick="scrollToId('printables')">משחקים להדפסה</button>
-      <button class="chip" onclick="scrollToId('holidays')">חגים</button>
-    </nav>
-  </header>
+<h1>!ברוכים הבאים לאתר דפי צביעה ולמידה</h1>
+<p>בחרו קטגוריה, לחצו על הקובץ ותורידו להדפסה בחינם 🎨🧩</p>
 
-  <!-- דפי צביעה: חדי קרן (קיים) -->
-  <section id="coloring-unicorns" class="section">
-    <h2>דפי צביעה — חדי קרן</h2>
-    <div class="grid">
-      <article class="card">
-        <img src="A_line_drawing_coloring_page_in_black_and_white_de.png" alt="דף צביעה: חד קרן עומד בעננים" />
-        <a class="btn" href="unicorn_coloring_page_1_small.pdf" target="_blank" download>הורד דף צביעה</a>
-        <div class="note">PDF | עמוד 1</div>
-      </article>
-      <article class="card">
-        <img src="unicorns_pack_preview.png" alt="תצוגה מקדימה: חבילת חדי קרן" />
-        <a class="btn" href="unicorns_coloring_pack_12.pdf" target="_blank" download>הורד חבילת חדי קרן (12)</a>
-        <div class="note">PDF | 12 עמודים</div>
-      </article>
-    </div>
-  </section>
+<!-- מקורי -->
+<div class="section">
+<h2>דפי צביעה - חדי קרן</h2>
+<div class="coloring-page">
+<img src="A_line_drawing_coloring_page_in_black_and_white_de.png" alt="דפי צביעה - חד קרן">
+<a class="download-button" href="unicorn_coloring_page_1_small.pdf" target="_blank" download>הורד דף צביעה</a>
+</div>
+</div>
 
-  <!-- דפי צביעה: חגים (קיים) -->
-  <section id="holidays" class="section">
-    <h2>דפי צביעה — חגים</h2>
-    <div class="grid">
-      <article class="card">
-        <img src="holiday_coloring_preview.png" alt="דפי צביעה לחגים" />
-        <a class="btn" href="holiday_coloring_pages.pdf" target="_blank" download>הורד דפי חגים</a>
-        <div class="note">PDF | ערבוב חגים בישראל ובעולם</div>
-      </article>
-      <article class="card">
-        <img src="hanukkah_preview.png" alt="חנוכייה וסביבונים — תצוגה מקדימה" />
-        <a class="btn" href="hanukkah_coloring_pack.pdf" target="_blank" download>חנוכה — 10 דפים</a>
-        <div class="note">PDF | 10 עמודים</div>
-      </article>
-    </div>
-  </section>
+<div class="section">
+<h2>דפי צביעה - חגים</h2>
+<div class="coloring-page">
+<img src="holiday_coloring_preview.png" alt="דפי צביעה - חגים">
+<a class="download-button" href="holiday_coloring_pages.pdf" target="_blank" download>הורד דפי חגים</a>
+</div>
+</div>
 
-  <!-- דפי צביעה: חיות (קיים) -->
-  <section id="coloring-animals" class="section">
-    <h2>דפי צביעה — חיות</h2>
-    <div class="grid">
-      <article class="card">
-        <img src="animals_coloring_preview.png" alt="דפי צביעה של חיות שונות" />
-        <a class="btn" href="coloring_animals.png" target="_blank" download>הורד דפי חיות</a>
-        <div class="note">PNG | מבחר דפים</div>
-      </article>
-      <article class="card">
-        <img src="sea_animals_preview.png" alt="חיות ים — תמונת תצוגה" />
-        <a class="btn" href="sea_animals_coloring_pack.pdf" target="_blank" download>חיות ים (8)</a>
-        <div class="note">PDF | 8 עמודים</div>
-      </article>
-    </div>
-  </section>
+<div class="section">
+<h2>דפי צביעה - חיות</h2>
+<div class="coloring-page">
+<img src="animals_coloring_preview.png" alt="דפי צביעה - חיות">
+<a class="download-button" href="coloring_animals.png" target="_blank">הורד דפי חיות</a>
+</div>
+</div>
 
-  <!-- דפי צביעה: כלי רכב (חדש) -->
-  <section id="coloring-vehicles" class="section">
-    <h2>דפי צביעה — כלי רכב</h2>
-    <div class="grid">
-      <article class="card">
-        <img src="vehicles_cars_preview.png" alt="מכוניות — תצוגה" />
-        <a class="btn" href="cars_coloring_pack.pdf" target="_blank" download>מכוניות (10)</a>
-        <div class="note">PDF | 10 עמודים</div>
-      </article>
-      <article class="card">
-        <img src="vehicles_air_preview.png" alt="מטוסים — תצוגה" />
-        <a class="btn" href="air_vehicles_coloring_pack.pdf" target="_blank" download>מטוסים ומסוקים (8)</a>
-        <div class="note">PDF | 8 עמודים</div>
-      </article>
-      <article class="card">
-        <img src="vehicles_trucks_preview.png" alt="משאיות וכלי עבודה — תצוגה" />
-        <a class="btn" href="trucks_construction_coloring.pdf" target="_blank" download>משאיות וכלי עבודה (12)</a>
-        <div class="note">PDF | 12 עמודים</div>
-      </article>
-    </div>
-  </section>
+<div class="section">
+<h2>משחקים להדפסה</h2>
+<div class="coloring-page">
+<img src="printable_games_preview.png" alt="משחקים להדפסה">
+<a class="download-button" href="printable_games_pack.pdf" target="_blank" download> הורד משחקים להדפסה לכל המשפחה</a>
+</div>
+</div>
 
-  <!-- דפי צביעה: דינוזאורים (חדש) -->
-  <section id="coloring-dinosaurs" class="section">
-    <h2>דפי צביעה — דינוזאורים</h2>
-    <div class="grid">
-      <article class="card">
-        <img src="dinosaurs_preview.png" alt="דינוזאור מחייך — תצוגה" />
-        <a class="btn" href="dinosaurs_coloring_pack.pdf" target="_blank" download>דינוזאורים (10)</a>
-        <div class="note">PDF | 10 עמודים</div>
-      </article>
-      <article class="card">
-        <img src="dino_babies_preview.png" alt="דינוזאורים קטנים — תצוגה" />
-        <a class="btn" href="dino_babies_coloring.pdf" target="_blank" download>דינו לתחילת הדרך (6)</a>
-        <div class="note">PDF | 6 עמודים</div>
-      </article>
-    </div>
-  </section>
+<!-- תוספות שביקשת -->
+<div class="section">
+<h2>דפי למידה</h2>
+<div class="coloring-page">
+<img src="learning_preview.png" alt="דפי למידה">
+<a class="download-button" href="learning_pages.pdf" target="_blank" download>הורד דפי למידה</a>
+</div>
+</div>
 
-  <!-- דפי צביעה: גיבורי על (חדש, כללי ללא מותגים) -->
-  <section id="coloring-superheroes" class="section">
-    <h2>דפי צביעה — גיבורי על (כללי)</h2>
-    <div class="grid">
-      <article class="card">
-        <img src="superheroes_general_preview.png" alt="דמות גיבור על כללית — תצוגה" />
-        <a class="btn" href="superheroes_generic_pack.pdf" target="_blank" download>גיבורי על (9)</a>
-        <div class="note">PDF | דמויות מקוריות</div>
-      </article>
-    </div>
-  </section>
+<div class="section">
+<h2>דפי צביעה - חופש גדול</h2>
+<div class="coloring-page">
+<img src="summer_coloring_preview.png" alt="דפי צביעה - חופש גדול">
+<a class="download-button" href="summer_coloring_pack.pdf" target="_blank" download>הורד דפי חופש גדול</a>
+</div>
+</div>
 
-  <!-- דפי צביעה: נסיכות ופיות (חדש) -->
-  <section id="coloring-princesses" class="section">
-    <h2>דפי צביעה — נסיכות ופיות</h2>
-    <div class="grid">
-      <article class="card">
-        <img src="princesses_fairies_preview.png" alt="נסיכה ופיה — תצוגה" />
-        <a class="btn" href="princesses_fairies_pack.pdf" target="_blank" download>נסיכות ופיות (12)</a>
-        <div class="note">PDF | 12 עמודים</div>
-      </article>
-    </div>
-  </section>
+<div class="section">
+<h2>דפי צביעה - מכוניות</h2>
+<div class="coloring-page">
+<img src="cars_coloring_preview.png" alt="דפי צביעה - מכוניות">
+<a class="download-button" href="cars_coloring_pack.pdf" target="_blank" download>הורד דפי מכוניות</a>
+</div>
+</div>
 
-  <!-- דפי צביעה: חלל -->
-  <section id="coloring-space" class="section">
-    <h2>דפי צביעה — חלל ואסטרונומיה</h2>
-    <div class="grid">
-      <article class="card">
-        <img src="space_preview.png" alt="טיל וכוכבים — תצוגה" />
-        <a class="btn" href="space_coloring_pack.pdf" target="_blank" download>חלל (10)</a>
-        <div class="note">PDF | אסטרונאוטים, כוכבים, כוכבי לכת</div>
-      </article>
-    </div>
-  </section>
+<div class="section">
+<h2>דפי צביעה - חורף</h2>
+<div class="coloring-page">
+<img src="winter_coloring_preview.png" alt="דפי צביעה - חורף">
+<a class="download-button" href="winter_coloring_pack.pdf" target="_blank" download>הורד דפי חורף</a>
+</div>
+</div>
 
-  <!-- דפי צביעה: טבע ומנדלות -->
-  <section id="coloring-nature" class="section">
-    <h2>דפי צביעה — טבע ופרחים</h2>
-    <div class="grid">
-      <article class="card">
-        <img src="flowers_preview.png" alt="פרחים — תצוגה" />
-        <a class="btn" href="flowers_coloring_pack.pdf" target="_blank" download>פרחים (10)</a>
-        <div class="note">PDF | 10 עמודים</div>
-      </article>
-    </div>
-  </section>
-
-  <section id="coloring-mandalas" class="section">
-    <h2>דפי צביעה — מנדלות להרפיה</h2>
-    <div class="grid">
-      <article class="card">
-        <img src="mandalas_preview.png" alt="מנדלות — תצוגה" />
-        <a class="btn" href="mandalas_easy_to_medium.pdf" target="_blank" download>מנדלות (קל–בינוני)</a>
-        <div class="note">PDF | 15 עמודים</div>
-      </article>
-    </div>
-  </section>
-
-  <!-- דפי למידה (חדש גדול) -->
-  <section id="learning" class="section">
-    <h2>דפי למידה — טרייסינג, חשבון ושפה</h2>
-    <div class="grid">
-      <article class="card">
-        <img src="hebrew_alefbet_tracing_preview.png" alt="טרייסינג אותיות א׳–ת׳" />
-        <a class="btn" href="hebrew_alefbet_tracing_22.pdf" target="_blank" download>אותיות בעברית — טרייסינג (22)</a>
-        <div class="note">PDF | אותיות א׳–ת׳, קווים מקווקווים</div>
-      </article>
-      <article class="card">
-        <img src="english_abc_tracing_preview.png" alt="ABC טרייסינג" />
-        <a class="btn" href="english_abc_tracing_26.pdf" target="_blank" download>ABC באנגלית — טרייסינג (26)</a>
-        <div class="note">PDF | A–Z uppercase/lowercase</div>
-      </article>
-      <article class="card">
-        <img src="numbers_1_20_preview.png" alt="מספרים 1–20" />
-        <a class="btn" href="numbers_counting_1_20.pdf" target="_blank" download>סופרים עד 20</a>
-        <div class="note">PDF | התאמת כמויות, צביעה לפי מספר</div>
-      </article>
-      <article class="card">
-        <img src="shapes_preview.png" alt="צורות בסיסיות" />
-        <a class="btn" href="basic_shapes_tracing.pdf" target="_blank" download>צורות — טרייסינג</a>
-        <div class="note">PDF | עיגול, ריבוע, משולש ועוד</div>
-      </article>
-      <article class="card">
-        <img src="addition_subtraction_preview.png" alt="חיבור וחיסור עד 20" />
-        <a class="btn" href="math_add_sub_0_20.pdf" target="_blank" download>חיבור/חיסור עד 20</a>
-        <div class="note">PDF | תרגול מדורג</div>
-      </article>
-      <article class="card">
-        <img src="clock_time_preview.png" alt="שעות בשעון אנלוגי" />
-        <a class="btn" href="learn_the_clock_easy.pdf" target="_blank" download>לומדים שעון — קל</a>
-        <div class="note">PDF | רבעים וחצאים</div>
-      </article>
-      <article class="card">
-        <img src="prewriting_lines_preview.png" alt="קווים מקווקווים — גרפומוטוריקה" />
-        <a class="btn" href="prewriting_paths_lines.pdf" target="_blank" download>גרפומוטוריקה — קווי תרגול</a>
-        <div class="note">PDF | קווים, לולאות, תבניות</div>
-      </article>
-      <article class="card">
-        <img src="maze_easy_preview.png" alt="מבוך לילדים" />
-        <a class="btn" href="mazes_easy_pack_20.pdf" target="_blank" download>מבוכים קלים (20)</a>
-        <div class="note">PDF | רמות קלות</div>
-      </article>
-      <article class="card">
-        <img src="connect_dots_preview.png" alt="נקודות לחיבור" />
-        <a class="btn" href="connect_the_dots_1_50.pdf" target="_blank" download>מחברים נקודות (1–50)</a>
-        <div class="note">PDF | תרגול ספירה וסדר</div>
-      </article>
-    </div>
-  </section>
-
-  <!-- משחקים להדפסה (קיים + שדרוג) -->
-  <section id="printables" class="section">
-    <h2>משחקים להדפסה</h2>
-    <div class="grid">
-      <article class="card">
-        <img src="printable_games_preview.png" alt="משחקים להדפסה — תצוגה" />
-        <a class="btn" href="printable_games_pack.pdf" target="_blank" download>הורד משחקים לכל המשפחה</a>
-        <div class="note">PDF | דומינו, מיקוד, זיכרון</div>
-      </article>
-      <article class="card">
-        <img src="bingo_animals_preview.png" alt="בינגו חיות" />
-        <a class="btn" href="bingo_animals_8cards.pdf" target="_blank" download>בינגו חיות (8 כרטיסים)</a>
-        <div class="note">PDF | 8 לוחות + כרטיסיות</div>
-      </article>
-      <article class="card">
-        <img src="tic_tac_toe_preview.png" alt="איקס עיגול" />
-        <a class="btn" href="tic_tac_toe_printable.pdf" target="_blank" download>איקס עיגול — גרסת דפים</a>
-        <div class="note">PDF | דפי משחק חוזרים</div>
-      </article>
-    </div>
-  </section>
-
-  <footer>
-    <p>© 2025 דפי צביעה ולמידה — שימוש אישי חינמי. מוזמנים לשתף! ✨</p>
-  </footer>
-
-  <script>
-    function scrollToId(id){
-      const el = document.getElementById(id);
-      if(!el) return; 
-      window.scrollTo({top: el.offsetTop - 10, behavior: 'smooth'});
-    }
-  </script>
 </body>
 </html>
